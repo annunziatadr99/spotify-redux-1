@@ -105,7 +105,7 @@ const HomePage = () => {
               {popData.length > 0 && <AlbumCard songInfo={popPick[0]} />}
               {popData.length > 1 && <AlbumCard songInfo={popPick1[0]} />}
               {popData.length > 2 && <AlbumCard songInfo={popPick2[0]} />}
-              {popData.length > 3 && <AlbumCard songInfo={popPick2[0]} />}
+              {popData.length > 3 && <AlbumCard songInfo={popPick[0]} />}
             </div>
           </div>
         </Col>
