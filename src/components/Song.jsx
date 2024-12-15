@@ -29,12 +29,9 @@ const Song = ({ track }) => {
         {track.title}
       </a>
       <small className="duration" style={{ color: "white" }}>
-        {Math.floor(
-          parseInt(track.duration) / 60 // setting the duration minutes
-        )}
-        :
+        {Math.floor(parseInt(track.duration) / 60)}:
         {parseInt(track.duration) % 60 < 10
-          ? "0" + (parseInt(track.duration) % 60) // checking che duration seconds, if they are less than 10 a 0 is prefixed
+          ? "0" + (parseInt(track.duration) % 60)
           : parseInt(track.duration) % 60}
         <span>
           {!favs.includes(track.id) ? (

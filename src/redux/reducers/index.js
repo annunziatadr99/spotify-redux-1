@@ -123,7 +123,6 @@ const ArtistReducer = (state = ArtistState, action) => {
   }
 };
 
-// PLAYER
 const PlayerState = {
   selectedTrack: null,
   favs: [],

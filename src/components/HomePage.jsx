@@ -24,9 +24,6 @@ const HomePage = () => {
     (state) => state.home.selectionsData.hiphopData
   );
 
-  // Serie di fetch via redux action
-  // Picka random 4 artist, se già pickati re-itera il comando (evita cloni), per ognuno fetcha
-
   useEffect(() => {
     while (rockRandomArtists.length < 4) {
       let artist = rockArtists[Math.floor(Math.random() * rockArtists.length)];
@@ -62,9 +59,9 @@ const HomePage = () => {
   const rockPick2 = rockData[2];
   const rockPick3 = rockData[3];
   const popPick = popData[0];
-  const popPick1 = popData[1]; // strano workaround, se non così non funziona...
-  const popPick2 = popData[2]; // Da automatizzare il tutto (array -> map)
-  const popPick3 = popData[3];
+  const popPick1 = popData[1];
+  const popPick2 = popData[3];
+
   const hiphopPick = hiphopData[0];
   const hiphopPick1 = hiphopData[1];
   const hiphopPick2 = hiphopData[2];
@@ -108,7 +105,7 @@ const HomePage = () => {
               {popData.length > 0 && <AlbumCard songInfo={popPick[0]} />}
               {popData.length > 1 && <AlbumCard songInfo={popPick1[0]} />}
               {popData.length > 2 && <AlbumCard songInfo={popPick2[0]} />}
-              {popData.length > 3 && <AlbumCard songInfo={popPick3[0]} />}
+              {popData.length > 3 && <AlbumCard songInfo={popPick2[0]} />}
             </div>
           </div>
         </Col>
@@ -116,7 +113,7 @@ const HomePage = () => {
       <Row>
         <Col xs={10}>
           <div id="hiphop">
-            <h2>#HipHop</h2>
+            <h2>HipHop</h2>
             <div
               className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3"
               id="hipHopSection"

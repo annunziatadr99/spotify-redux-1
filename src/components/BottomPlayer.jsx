@@ -42,20 +42,20 @@ const BottomPlayer = () => {
               lg={2}
               className="playerControls mt-1 w-50 d-flex justify-content-evenly"
             >
-              <a href="#">
+              <a href="">
                 <img src="../playerbuttons/Shuffle.png" alt="shuffle" />
               </a>
               <a href="#">
-                <img src="../playerbuttons/Previous.png" alt="shuffle" />
+                <img src="../playerbuttons/Previous.png" alt="Previous" />
               </a>
               <a href="#">
-                <img src="../playerbuttons/Play.png" alt="shuffle" />
+                <img src="../playerbuttons/Play.png" alt="Play" />
+              </a>
+              <a href="">
+                <img src="../playerbuttons/Next.png" alt="Next" />
               </a>
               <a href="#">
-                <img src="../playerbuttons/Next.png" alt="shuffle" />
-              </a>
-              <a href="#">
-                <img src="../playerbuttons/Repeat.png" alt="shuffle" />
+                <img src="../playerbuttons/Repeat.png" alt="Repeat" />
               </a>
             </Col>
 
@@ -66,12 +66,9 @@ const BottomPlayer = () => {
               </div>
               {track && (
                 <span className="text-light duration">
-                  {Math.floor(
-                    parseInt(track.duration) / 60 // setting the duration minutes
-                  )}
-                  :
+                  {Math.floor(parseInt(track.duration) / 60)}:
                   {parseInt(track.duration) % 60 < 10
-                    ? "0" + (parseInt(track.duration) % 60) // checking che duration seconds, if they are less than 10 a 0 is prefixed
+                    ? "0" + (parseInt(track.duration) % 60)
                     : parseInt(track.duration) % 60}
                 </span>
               )}

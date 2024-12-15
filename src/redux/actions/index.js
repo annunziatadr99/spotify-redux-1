@@ -10,14 +10,10 @@ export const DEL_FAVS = "DEL_FAVS";
 const baseEndpoint =
   "https://striveschool-api.herokuapp.com/api/deezer/search?q=";
 let headers = new Headers({
-  // sets the headers
   "X-RapidAPI-Host": "deezerdevs-deezer.p.rapidapi.com",
   "X-RapidAPI-Key": "9d408f0366mshab3b0fd8e5ecdf7p1b09f2jsne682a1797fa0",
 });
 
-//////////////////////////////////
-
-//PLAYER
 export const trackMount = (paylo) => {
   return {
     type: TRACK_MOUNT,

@@ -22,7 +22,7 @@ const Sidebar = () => {
         <div className="nav-container">
           <Link to={"/"}>
             <img
-              src="/logo/Spotify_Logo.png"
+              src="/logo/logo.png"
               alt="Spotify_Logo"
               width="131"
               height="40"
@@ -48,7 +48,10 @@ const Sidebar = () => {
                   </Link>
                 </li>
                 <li>
-                  <a className="nav-item nav-link" href="#">
+                  <a
+                    className="nav-item nav-link"
+                    href="https://www.google.com/?client=safari"
+                  >
                     <i className="fas fa-book-open fa-lg"></i>&nbsp; Your
                     Library
                   </a>
@@ -93,11 +96,17 @@ const Sidebar = () => {
             Login
           </button>
           <div>
-            <a href="#" className="text-decoration-none">
+            <a
+              href="https://www.google.com/?client=safari"
+              className="text-decoration-none"
+            >
               Cookie Policy
             </a>
             |
-            <a href="#" className="text-decoration-none">
+            <a
+              href="https://www.google.com/?client=safari"
+              className="text-decoration-none"
+            >
               {" "}
               Privacy
             </a>

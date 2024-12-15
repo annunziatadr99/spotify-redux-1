@@ -12,7 +12,7 @@ body {
   );
 }
 
-/*SIDEBAR SECTION*/
+/*SIDEBAR*/
 .navbar.fixed-left {
   position: fixed;
   top: 0;
@@ -90,7 +90,7 @@ ul {
   }
 }
 
-/* BOTTOM PLAYER SECTION*/
+/* BOTTOM PLAYER */
 .playInfo {
   margin-left: 230px;
   width: 250px;
@@ -169,7 +169,7 @@ ul {
   width: fit-content !important;
 }
 
-/*MAIN PAGE SECTION*/
+/*MAIN PAGE */
 
 .mainLinks {
   margin-top: 1.5rem;
